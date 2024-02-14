@@ -14,9 +14,9 @@
         <div class="col-md-12">
             <section>
                 <form id="account" method="post">
-                    <h3 class="border-bottom pb-3 mb-4 text-secondary text-center">
-                        Use a local account to log in.
-                    </h3>
+                    <p class="border-bottom pb-3 mb-4 text-secondary text-center">
+                        Admin: admin@gmail.com, Admin123.
+                    </p>
                     <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
                     <div class="form-floating mb-3">
                         <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
@@ -43,9 +43,6 @@
                         </p>
                         <p>
                             <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
-                        </p>
-                        <p>
-                            <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
                         </p>
                     </div>
                 </form>
